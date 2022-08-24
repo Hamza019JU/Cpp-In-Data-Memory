@@ -48,20 +48,12 @@ public:
 				cout << rows[i] << " ." << name[i] << " || " << age[i] << endl;
 				break;
 			}
-			else {
-				cout << "The regestration Name you entered is Not Available " << endl;
-				break;
-			}
 		}
 	}
 	void Search_Process_Info_age(int *ageReg) {           // Function to search by using Regestration Age   
 		for (int i = 0; i < n; i++) {
 			if (age[i] == *ageReg) {
 				cout << rows[i] << " ." << name[i] << " || " << age[i] << endl;
-				break;
-			}
-			else {
-				cout << "The regestration Name you entered is Not Available " << endl;
 				break;
 			}
 		}
@@ -151,12 +143,18 @@ int main() {
 				cout << "Please enter the Regisration Name : ";
 				cin >> RegName;
 				for (int i = 0; i < n; i++) {
-					Person[i].Search_Process_Info_name(&RegName);}break;
+					Person[i].Search_Process_Info_name(&RegName);
+				}
+				break;
 			case 3:     // Search using regestration age
 				cout << "Please enter the Regisration Age : ";
 				cin >> regAge;
 				for (int i = 0; i < n; i++) {
-					Person[i].Search_Process_Info_age(&regAge);}break;}break;
+					Person[i].Search_Process_Info_age(&regAge);
+				}
+				break;
+			}
+			break;
 		case 3:                // Edit Information
 			cout << "Enter the regestration number : ";
 			cin >> regNo;      // Enter the Reg No of the wanted Info to be updated
