@@ -107,28 +107,6 @@ void Choose_type() {      // used in Search process to determine the search meth
 	cout << "2. Name" << endl;
 	cout << "3. Age" << endl;
 }
-/************************************************************************************************************************/
-//class Timer {
-//public:
-//	Timer() {
-//		std::chrono::high_resolution_clock::now();
-//	}
-//	~Timer() {
-//		Stop();
-//	}
-//	void Stop() {
-//		auto endTimePoint = high_resolution_clock::now();
-//		auto start = time_point_cast<microseconds>(m_StartTimePoint).time_since_epoch().count();
-//		auto stop = time_point_cast<microseconds>(endTimePoint).time_since_epoch().count();
-//		auto duration = stop - start;
-//		double ms = duration * 0.001;
-//		cout << duration << " " << "us \n" << ms << " ms" << endl;
-//
-//	}
-//private:
-//	std::chrono::time_point<std::chrono::high_resolution_clock>m_StartTimePoint;
-//};
-/***************************************************************************************************************/
 int main() {
 	ofstream outfile("D:\\Cpp projects\\In data base memory\\source.txt");     // Creat a file to print the information in it 
 	outfile << "No." << "||" << "Studen " << "||" << "Age " << endl;           // Print in the file
